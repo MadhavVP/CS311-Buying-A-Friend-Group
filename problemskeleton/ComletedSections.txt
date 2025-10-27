@@ -2,3 +2,4 @@ problem.yaml
 problem.en.text
 2 wa sols (overflow, smalles edges instead of mst)
 1 acc
+1 tle
