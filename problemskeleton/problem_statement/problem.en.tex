@@ -1,0 +1,39 @@
+\problemname{Title of the Problem Here}
+
+% example use of the \illustration command
+% \illustration{0.3}{filename}{Photo by \href{url_here}{link text here, e.g. author name}}
+
+Put the problem story here. Here are some common issues to keep in mind as you
+edit:
+\begin{itemize}
+    \item Use \LaTeX math mode for (most) numbers. The few exceptions are for
+        years (e.g. 2019) or whenever a number is part of a string token.
+    \item For numbers $1\,000$ or larger, use thousands separatator \verb+\\,+.
+        So, for example, one million would be $1\,000\,000$.
+    \item Write in active voice (i.e. avoid passive voice).
+    \item Write in and present tense (avoid the word `will', especially in the
+        input description). So: we prefer the text `Input starts with an
+        integer $n$ followed by $n$ lines...' rather than `Input {\em will}
+        start with an integer $n$, then {\em will} come $n$ lines...'.
+\end{itemize}
+
+
+\section*{Input}
+
+Put the input format (syntax) description here, including constraints on all
+input values. That includes number ranges, the maximum number of digits after the
+decimal point for real values, the character sets and length ranges for
+strings, etc. If possible, always give a count of the number of items that
+follow (test cases, e.g.) rather than delimiting with a token or EOF.  The
+input format should be fairly precise, so that the reader knows exactly what to
+expect (it should usually be easy to write a program to read the input using
+line-oriented or token-oriented parsing).
+
+\section*{Output}
+
+Describe the output. Kattis output judging is not sensitive to case changes or
+space changes (including line formatting and blank lines). Try to maintain this
+flexibility with your problem -- do not be overly precise or prescriptive here
+in the output formatting description.  However, if exact textual matching or
+floating-point precision is required, do specify the constraints (e.g. `your
+answer should be correct within a relative or absolute error of $10^{-3}$').
