@@ -1,39 +1,43 @@
-\problemname{Title of the Problem Here}
+\problemname{Buying the Friend Group}
 
 % example use of the \illustration command
 % \illustration{0.3}{filename}{Photo by \href{url_here}{link text here, e.g. author name}}
 
-Put the problem story here. Here are some common issues to keep in mind as you
-edit:
-\begin{itemize}
-    \item Use \LaTeX math mode for (most) numbers. The few exceptions are for
-        years (e.g. 2019) or whenever a number is part of a string token.
-    \item For numbers $1\,000$ or larger, use thousands separatator \verb+\\,+.
-        So, for example, one million would be $1\,000\,000$.
-    \item Write in active voice (i.e. avoid passive voice).
-    \item Write in and present tense (avoid the word `will', especially in the
-        input description). So: we prefer the text `Input starts with an
-        integer $n$ followed by $n$ lines...' rather than `Input {\em will}
-        start with an integer $n$, then {\em will} come $n$ lines...'.
-\end{itemize}
+\indent You have a lot of friends, but not all of them know each other. You want to do large group activities, with all of your friends. You don't want any of your friends to feel uncomfortable, so you want to make sure that everyone is friends with at least one other person and that all of your friends have some sort of connection to all of your other friends, either as friends of friends, or friends of friends of friends, or...\\ 
+\indent Your friends are lazy, so they'll only meet your other friends and befriend them over dinner, and some of them will only meet over a fancy dinner too. They also only want to eat dinner at the same place once, cause repeating would be boring. What is the minimum amount of money you have to spend to make sure each of your friends are connected to your other friends in some way, so that they are all comfortable in a group activity?\\
+% Put the problem story here. Here are some common issues to keep in mind as you
+% edit:
+% \begin{itemize}
+%     % \item Use \LaTeX math mode for (most) numbers. The few exceptions are for
+%     %     years (e.g. 2019) or whenever a number is part of a string token.
+%     % \item For numbers $1\,000$ or larger, use thousands separatator \verb+\\,+.
+%     %     So, for example, one million would be $1\,000\,000$.
+%     % \item Write in active voice (i.e. avoid passive voice).
+%     % \item Write in and present tense (avoid the word `will', especially in the
+%     %     input description). So: we prefer the text `Input starts with an
+%     %     integer $n$ followed by $n$ lines...' rather than `Input {\em will}
+%     %     start with an integer $n$, then {\em will} come $n$ lines...'.
+% \end{itemize}
 
 
 \section*{Input}
 
-Put the input format (syntax) description here, including constraints on all
-input values. That includes number ranges, the maximum number of digits after the
-decimal point for real values, the character sets and length ranges for
-strings, etc. If possible, always give a count of the number of items that
-follow (test cases, e.g.) rather than delimiting with a token or EOF.  The
-input format should be fairly precise, so that the reader knows exactly what to
-expect (it should usually be easy to write a program to read the input using
-line-oriented or token-oriented parsing).
+Input begins with a number $1 \leq n \leq 10^4$, the number of friends you have. The following n lines list the names of these friends. The next $n-1\leq m \leq \frac{n^2-n}{2}$ lines contain pairs $a,b,c$ where $a$ and $b$ are your friends, and $c$ is the cost of a place both of your friends would be interested in going to. The next $x$ lines represent pairs $a,b$ of two of your friends who already know each other
+% Put the input format (syntax) description here, including constraints on all
+% input values. That includes number ranges, the maximum number of digits after the
+% decimal point for real values, the character sets and length ranges for
+% strings, etc. If possible, always give a count of the number of items that
+% follow (test cases, e.g.) rather than delimiting with a token or EOF.  The
+% input format should be fairly precise, so that the reader knows exactly what to
+% expect (it should usually be easy to write a program to read the input using
+% line-oriented or token-oriented parsing).
 
 \section*{Output}
 
-Describe the output. Kattis output judging is not sensitive to case changes or
-space changes (including line formatting and blank lines). Try to maintain this
-flexibility with your problem -- do not be overly precise or prescriptive here
-in the output formatting description.  However, if exact textual matching or
-floating-point precision is required, do specify the constraints (e.g. `your
-answer should be correct within a relative or absolute error of $10^{-3}$').
+Output one number, the minimum amount of money you will lose trying to make sure that each of your friends has some connection to each of your other friends other than through you. The input is formatted such that it will alsways be possible to do this.
+% Describe the output. Kattis output judging is not sensitive to case changes or
+% space changes (including line formatting and blank lines). Try to maintain this
+% flexibility with your problem -- do not be overly precise or prescriptive here
+% in the output formatting description.  However, if exact textual matching or
+% floating-point precision is required, do specify the constraints (e.g. `your
+% answer should be correct within a relative or absolute error of $10^{-3}$').
