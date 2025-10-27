@@ -9,7 +9,7 @@ using namespace std;
 int main() {
         int n = rand() % MAX_V;
         cout << n << "\n";
-        int m = (rand() % (int) floor(((pow(n, 2) - n) / 2) - (n - 1)));
+        int m = (rand() % max((int) floor(((pow(n, 2) - n) / 2) - (n - 1))), 1);
         m = (m < 0 ? 0 : m);
         m += n - 1;
         vector<int> V(n, 0);
